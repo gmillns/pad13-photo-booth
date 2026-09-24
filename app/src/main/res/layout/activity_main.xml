@@ -4,7 +4,7 @@
 
     <androidx.camera.view.PreviewView
         android:id="@+id/previewView" android:layout_width="match_parent" android:layout_height="match_parent"
-        android:scaleType="fillCenter" />
+        android:scaleType="fill_center" />
 
     <ImageView android:id="@+id/photoPreview" android:layout_width="match_parent" android:layout_height="match_parent"
         android:scaleType="fitCenter" android:background="#000000" android:visibility="gone" />
