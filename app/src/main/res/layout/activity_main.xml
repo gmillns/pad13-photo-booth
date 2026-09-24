@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent" android:background="#000000">
+
+    <androidx.camera.view.PreviewView
+        android:id="@+id/previewView" android:layout_width="match_parent" android:layout_height="match_parent"
+        android:scaleType="fillCenter" />
+
+    <ImageView android:id="@+id/photoPreview" android:layout_width="match_parent" android:layout_height="match_parent"
+        android:scaleType="fitCenter" android:background="#000000" android:visibility="gone" />
+
+    <TextView android:id="@+id/countdown" android:layout_width="match_parent" android:layout_height="match_parent"
+        android:gravity="center" android:textColor="#FFFFFF" android:textSize="120sp" android:textStyle="bold"
+        android:shadowColor="#000000" android:shadowRadius="12" android:visibility="gone" />
+
+    <LinearLayout android:id="@+id/cameraControls" android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:layout_gravity="bottom" android:gravity="center" android:padding="24dp">
+        <Button android:id="@+id/takePhoto" android:layout_width="260dp" android:layout_height="72dp"
+            android:text="TAKE PHOTO" android:textSize="22sp" />
+    </LinearLayout>
+
+    <LinearLayout android:id="@+id/reviewControls" android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:layout_gravity="bottom" android:gravity="center" android:padding="24dp" android:visibility="gone">
+        <Button android:id="@+id/retake" android:layout_width="220dp" android:layout_height="68dp"
+            android:layout_marginEnd="24dp" android:text="RETAKE" android:textSize="20sp" />
+        <Button android:id="@+id/keep" android:layout_width="220dp" android:layout_height="68dp"
+            android:text="KEEP PHOTO" android:textSize="20sp" />
+    </LinearLayout>
+
+    <TextView android:id="@+id/message" android:layout_width="match_parent" android:layout_height="match_parent"
+        android:gravity="center" android:textColor="#FFFFFF" android:textSize="42sp" android:textStyle="bold"
+        android:background="#CC000000" android:visibility="gone" />
+</FrameLayout>
