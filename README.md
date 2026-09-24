@@ -1,10 +1,7 @@
-# Pad 13 Photo Booth v0.4
-Standalone Baring Ladies Festival 2026 booth with idle gallery.
+# Pad 13 Photo Booth v0.4.1
+Camera transition hotfix for v0.4.
 
-- starts in gallery/welcome mode
-- rotates accepted photos every 5 seconds
-- TAKE PHOTO switches to live front camera
-- 30-second camera inactivity returns to gallery
-- KEEP PHOTO saves locally, thanks guest, then returns to gallery
-- first-use welcome screen shown until photographs exist
-- no internet, PC or projector required
+- preserves the working Baring Ladies Festival welcome/gallery interface
+- CameraX is no longer bound while the PreviewView is hidden at startup
+- pressing TAKE PHOTO first reveals the PreviewView, then explicitly binds the camera
+- gallery rotation, 30-second inactivity return, capture, Retake/Keep and local saving retained
