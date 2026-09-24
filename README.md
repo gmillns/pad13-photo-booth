@@ -1,10 +1,10 @@
-# Pad 13 Photo Booth v0.3
-Baring Ladies Festival 2026 visual refinement.
+# Pad 13 Photo Booth v0.4
+Standalone Baring Ladies Festival 2026 booth with idle gallery.
 
-- retains proven v0.2 camera/capture/save workflow
-- double-line Art Deco gold framing
-- decorative diamonds and line ornaments
-- larger guest-friendly Take Photo control
-- refined Retake / Keep Photo controls
-- clean camera image area with decoration kept in the surround
-- animated countdown, flash effect and keep-awake retained
+- starts in gallery/welcome mode
+- rotates accepted photos every 5 seconds
+- TAKE PHOTO switches to live front camera
+- 30-second camera inactivity returns to gallery
+- KEEP PHOTO saves locally, thanks guest, then returns to gallery
+- first-use welcome screen shown until photographs exist
+- no internet, PC or projector required
