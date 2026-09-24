@@ -1,14 +1,75 @@
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent" android:background="#050505" android:keepScreenOn="true">
-<LinearLayout android:layout_width="match_parent" android:layout_height="match_parent" android:orientation="vertical" android:padding="18dp">
-<TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="BARING LADIES FESTIVAL 2026" android:textColor="#D6B35A" android:textSize="28sp" android:gravity="center" android:letterSpacing="0.08" android:paddingBottom="10dp"/>
-<FrameLayout android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1" android:background="@drawable/gold_frame" android:padding="5dp">
-<androidx.camera.view.PreviewView android:id="@+id/previewView" android:layout_width="match_parent" android:layout_height="match_parent"/>
-<ImageView android:id="@+id/photoPreview" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="centerCrop" android:visibility="gone"/>
-<TextView android:id="@+id/countdown" android:layout_width="match_parent" android:layout_height="match_parent" android:gravity="center" android:textColor="#F3D982" android:textSize="120sp" android:textStyle="bold" android:visibility="gone"/>
-<View android:id="@+id/flash" android:layout_width="match_parent" android:layout_height="match_parent" android:background="#FFFFFF" android:alpha="0" android:visibility="gone"/>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+ android:layout_width="match_parent" android:layout_height="match_parent"
+ android:background="#050505" android:keepScreenOn="true">
+
+ <LinearLayout android:layout_width="match_parent" android:layout_height="match_parent"
+  android:orientation="vertical" android:padding="14dp">
+
+  <FrameLayout android:layout_width="match_parent" android:layout_height="72dp"
+   android:background="@drawable/art_deco_outer">
+   <TextView android:layout_width="wrap_content" android:layout_height="match_parent"
+    android:layout_gravity="start|center_vertical" android:gravity="center"
+    android:text="◆  ─────" android:textColor="#D6B35A" android:textSize="16sp"
+    android:paddingLeft="24dp"/>
+   <TextView android:layout_width="match_parent" android:layout_height="match_parent"
+    android:gravity="center" android:text="BARING LADIES FESTIVAL 2026"
+    android:textColor="#E0BE68" android:textSize="27sp" android:letterSpacing="0.09"/>
+   <TextView android:layout_width="wrap_content" android:layout_height="match_parent"
+    android:layout_gravity="end|center_vertical" android:gravity="center"
+    android:text="─────  ◆" android:textColor="#D6B35A" android:textSize="16sp"
+    android:paddingRight="24dp"/>
+  </FrameLayout>
+
+  <Space android:layout_width="1dp" android:layout_height="8dp"/>
+
+  <FrameLayout android:layout_width="match_parent" android:layout_height="0dp"
+   android:layout_weight="1" android:background="@drawable/art_deco_outer" android:padding="10dp">
+   <androidx.camera.view.PreviewView android:id="@+id/previewView"
+    android:layout_width="match_parent" android:layout_height="match_parent"/>
+   <ImageView android:id="@+id/photoPreview"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:scaleType="centerCrop" android:visibility="gone"/>
+   <TextView android:id="@+id/countdown"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:gravity="center" android:textColor="#F3D982" android:textSize="130sp"
+    android:textStyle="bold" android:shadowColor="#000000" android:shadowDx="3"
+    android:shadowDy="3" android:shadowRadius="8" android:visibility="gone"/>
+   <View android:id="@+id/flash" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:background="#FFFFFF"
+    android:alpha="0" android:visibility="gone"/>
+  </FrameLayout>
+
+  <FrameLayout android:layout_width="match_parent" android:layout_height="96dp">
+   <TextView android:layout_width="wrap_content" android:layout_height="match_parent"
+    android:layout_gravity="start" android:gravity="center"
+    android:text="◆ ─── ◇ ─── ◆" android:textColor="#A88A43" android:textSize="13sp"
+    android:paddingLeft="24dp"/>
+   <TextView android:layout_width="wrap_content" android:layout_height="match_parent"
+    android:layout_gravity="end" android:gravity="center"
+    android:text="◆ ─── ◇ ─── ◆" android:textColor="#A88A43" android:textSize="13sp"
+    android:paddingRight="24dp"/>
+
+   <LinearLayout android:id="@+id/cameraControls" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:gravity="center">
+    <Button android:id="@+id/takePhoto" android:layout_width="260dp"
+     android:layout_height="68dp" android:text="TAKE PHOTO" android:textColor="#F3D982"
+     android:textSize="22sp" android:letterSpacing="0.05" android:background="@drawable/gold_button"/>
+   </LinearLayout>
+
+   <LinearLayout android:id="@+id/reviewControls" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:gravity="center" android:visibility="gone">
+    <Button android:id="@+id/retake" android:layout_width="190dp" android:layout_height="66dp"
+     android:text="RETAKE" android:textColor="#F3D982" android:textSize="20sp"
+     android:letterSpacing="0.04" android:background="@drawable/gold_button"/>
+    <Space android:layout_width="42dp" android:layout_height="1dp"/>
+    <Button android:id="@+id/keep" android:layout_width="260dp" android:layout_height="66dp"
+     android:text="KEEP PHOTO" android:textColor="#F3D982" android:textSize="20sp"
+     android:letterSpacing="0.04" android:background="@drawable/gold_button"/>
+   </LinearLayout>
+
+   <TextView android:id="@+id/message" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:gravity="center" android:textColor="#F3D982"
+    android:textSize="24sp" android:letterSpacing="0.04" android:visibility="gone"/>
+  </FrameLayout>
+ </LinearLayout>
 </FrameLayout>
-<FrameLayout android:layout_width="match_parent" android:layout_height="88dp">
-<LinearLayout android:id="@+id/cameraControls" android:layout_width="match_parent" android:layout_height="match_parent" android:gravity="center"><Button android:id="@+id/takePhoto" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="TAKE PHOTO" android:textColor="#F3D982" android:textSize="22sp" android:background="@drawable/gold_button"/></LinearLayout>
-<LinearLayout android:id="@+id/reviewControls" android:layout_width="match_parent" android:layout_height="match_parent" android:gravity="center" android:visibility="gone"><Button android:id="@+id/retake" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="RETAKE" android:textColor="#F3D982" android:textSize="20sp" android:background="@drawable/gold_button"/><Space android:layout_width="32dp" android:layout_height="1dp"/><Button android:id="@+id/keep" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="KEEP PHOTO" android:textColor="#F3D982" android:textSize="20sp" android:background="@drawable/gold_button"/></LinearLayout>
-<TextView android:id="@+id/message" android:layout_width="match_parent" android:layout_height="match_parent" android:gravity="center" android:textColor="#F3D982" android:textSize="24sp" android:visibility="gone"/>
-</FrameLayout></LinearLayout></FrameLayout>
